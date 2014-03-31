@@ -30,7 +30,7 @@ void print_results(vector<Land>);
 
 int main()
 {
-  Database db = db_name;
+  Database db(db_name);
 
   auto choise = show_menu();
   while (choise != Choise::quit)

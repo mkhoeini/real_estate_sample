@@ -19,7 +19,7 @@ Database::Database(string file_name)
     auto land = land_from_str(line);
     m_data.push_back(land);
   }
-  m_file.seekp(0, ios::seekdir::end);
+  m_file.seekp(0, ios::end);
 }
 
 void Database::add(Land land)
