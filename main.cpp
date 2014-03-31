@@ -115,6 +115,7 @@ Land get_new_land()
   int unit_price;
 
   cout << "\nEnter the owner's first name: ";
+  cin.ignore(1000, '\n');
   getline(cin, first);
 
   cout << "\nEnter the owner's last name: ";
@@ -127,6 +128,7 @@ Land get_new_land()
   cin >> area;
 
   cout << "\nEnter the land's address: ";
+  cin.ignore(1000, '\n');
   getline(cin, addr);
 
   cout << "\nEnter the land's per square metter price: ";
@@ -147,6 +149,7 @@ House get_new_house()
   int total_units, unit_num, level;
 
   cout << "\nEnter the owner's first name: ";
+  cin.ignore(1000, '\n');
   getline(cin, first);
 
   cout << "\nEnter the owner's last name: ";
@@ -159,6 +162,7 @@ House get_new_house()
   cin >> area;
 
   cout << "\nEnter the building's address: ";
+  cin.ignore(1000, '\n');
   getline(cin, addr);
 
   cout << "\nEnter the building's per square metter price: ";
